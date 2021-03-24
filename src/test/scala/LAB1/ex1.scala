@@ -3,10 +3,12 @@ import org.scalatest._
 import chiseltest._
 import chisel3._
 
-class Countertest extends FreeSpec with ChiselScalatestTester {
+class countertest extends FreeSpec with ChiselScalatestTester {
 
-  "lab1 (ex-1)" in {
-    test(new counter(5.U)) { c => c.io.result.expect(0.B)
+  "LAB 1 EX-1" in {
+    test(new counter(2.U)) { c =>
+      c.clock.step(10)
+      c.io.result.expect(0.B)
     }
   }
 }
