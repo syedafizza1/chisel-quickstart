@@ -5,7 +5,9 @@ import chisel3._
 
 class counter3test extends FreeSpec with ChiselScalatestTester {
 
-  "LAB 1 ex-3" in {
-    test(new counter3(2,40))
+  "LAB 1 EX-3" in {
+    test(new counter3(8,255)) { c =>
+      c.clock.step(1)
     }
+  }
 }
