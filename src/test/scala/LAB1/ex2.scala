@@ -5,7 +5,7 @@ import chisel3._
 class countingtest extends FreeSpec with ChiselScalatestTester {
 
   "LAB1 ex-2" in {
-    test(new counting(5.U))
+    test(new counting(1.U))
     
   }
 }
