@@ -15,4 +15,4 @@ class RISCVALUTests extends FreeSpec with ChiselScalatestTester {
       c.io.out.expect(30.U)
     }
   }
-}
+}   
