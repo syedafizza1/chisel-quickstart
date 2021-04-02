@@ -4,8 +4,9 @@ import org.scalatest._
 import chiseltest._
 import chisel3._
 
-class ImmediateTests extends FreeSpec with ChiselScalatestTester {
-    "Lab 3 Task 2" in {
+class task2Tests extends FreeSpec with ChiselScalatestTester {
+
+  "Lab 3 Task 2" in {
     test(new task2()) { c =>
       // c.io.instr.poke(103838099.U)
       c.io.instr.poke("h01700013".U)
@@ -18,6 +19,4 @@ class ImmediateTests extends FreeSpec with ChiselScalatestTester {
     //   c.io.br_taken.expect(1.B)
     }
   }
-}
- 
 }
