@@ -14,7 +14,7 @@ class task2Tests extends FreeSpec with ChiselScalatestTester {
     c.io.in(3).poke(0.B)
     c.io.sel(0).poke(0.B)
     c.io.sel(0).poke(0.B)
-    c.clock.step(1)
+      c.clock.step(1)
     c.io.out(0).expect(0.B)
     }
   }
